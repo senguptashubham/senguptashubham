@@ -20,11 +20,23 @@ So when I started learning ML, I kept re-deriving instead of trusting. A neural 
 
 <br>
 
+<div align="center">
+<img src="./assets/neural-net-learning.svg" alt="a small neural net, learning" width="420"/>
+</div>
+
+<br>
+
 Underneath that is a longer-running habit — I read philosophy for fun, and the questions that actually keep me up are the ones sitting at the join between the two: whether a system trained to predict the next token can ever be more than that, whether world models are the real path forward instead, what a transition past that ceiling would even look like, and whether anything resembling consciousness could emerge from something built entirely out of probability distributions — or whether that question is malformed from the start. I don't have answers, I'm not sure anyone does — I just find I want to keep pulling on the thread.
 
 <br>
 
 Longer-term, I want to be doing research-grade work in this field, not applying pretrained models to problems and calling it a day. Right now, that means going through the fundamentals this way — one method, rebuilt and verified, at a time — and writing down the reasoning as I go, not just the code.
+
+<br>
+
+<div align="center">
+<img src="./assets/lab-flask-testing.svg" alt="a flask, testing" width="420"/>
+</div>
 
 <br>
 
@@ -34,12 +46,7 @@ Longer-term, I want to be doing research-grade work in this field, not applying 
 
 ### what's actually here
 
-| folder | what's in it |
-|---|---|
-| [`ann-numpy-from-scratch/`](https://github.com/senguptashubham/shubhamLearnsMachine) | A full artificial neural net built with just NumPy — forward pass, backprop, and gradients derived and coded by hand, no autograd |
-| [`mlp-pytorch-gd-comparison/`](https://github.com/senguptashubham/shubhamLearnsMachine) | One MLP, three ways to train it — full-batch, mini-batch, and stochastic gradient descent — compared on convergence behavior, not assumed |
-
-*(Each folder has its own README with the actual reasoning — what broke, what the math meant, what I'd do differently.)*
+The work lives in **[shubhamLearnsMachine](https://github.com/senguptashubham/shubhamLearnsMachine)** — ML fundamentals rebuilt from first principles (so far: neural nets from raw NumPy, gradient descent variants compared head-to-head), each with a README covering the reasoning, not just the code. It grows as I go; check the repo itself for what's current rather than this page.
 
 <br>
 
@@ -51,17 +58,17 @@ Longer-term, I want to be doing research-grade work in this field, not applying 
 
 **current**
 
-![Python](https://img.shields.io/badge/-Python-0d1117?style=flat-square&logo=python&logoColor=3776AB)
-![NumPy](https://img.shields.io/badge/-NumPy-0d1117?style=flat-square&logo=numpy&logoColor=013243)
-![PyTorch](https://img.shields.io/badge/-PyTorch-0d1117?style=flat-square&logo=pytorch&logoColor=EE4C2C)
-![Jupyter](https://img.shields.io/badge/-Jupyter-0d1117?style=flat-square&logo=jupyter&logoColor=F37626)
+<img src="https://cdn.simpleicons.org/python/3776AB" width="32" height="32" title="Python" alt="Python"/> &nbsp;
+<img src="https://cdn.simpleicons.org/numpy/013243" width="32" height="32" title="NumPy" alt="NumPy"/> &nbsp;
+<img src="https://cdn.simpleicons.org/pytorch/EE4C2C" width="32" height="32" title="PyTorch" alt="PyTorch"/> &nbsp;
+<img src="https://cdn.simpleicons.org/jupyter/F37626" width="32" height="32" title="Jupyter" alt="Jupyter"/>
 
 **where I came from**
 
-![Selenium](https://img.shields.io/badge/-Selenium-0d1117?style=flat-square&logo=selenium&logoColor=43B02A)
-![Java](https://img.shields.io/badge/-Java-0d1117?style=flat-square&logo=openjdk&logoColor=white)
-![RestAssured](https://img.shields.io/badge/-RestAssured-0d1117?style=flat-square&logo=rest&logoColor=white)
-![Cucumber](https://img.shields.io/badge/-Cucumber-0d1117?style=flat-square&logo=cucumber&logoColor=23D96C)
+<img src="https://cdn.simpleicons.org/selenium/43B02A" width="32" height="32" title="Selenium" alt="Selenium"/> &nbsp;
+<img src="https://cdn.simpleicons.org/openjdk/FFFFFF" width="32" height="32" title="Java" alt="Java"/> &nbsp;
+<img src="https://cdn.simpleicons.org/cucumber/23D96C" width="32" height="32" title="Cucumber" alt="Cucumber"/> &nbsp;
+![RestAssured](https://img.shields.io/badge/-RestAssured-0d1117?style=flat-square)
 
 <br>
 
