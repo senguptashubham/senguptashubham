@@ -61,14 +61,23 @@ The work lives in **[shubhamLearnsMachine](https://github.com/senguptashubham/sh
 <img src="https://cdn.simpleicons.org/python/3776AB" width="32" height="32" title="Python" alt="Python"/> &nbsp;
 <img src="https://cdn.simpleicons.org/numpy/013243" width="32" height="32" title="NumPy" alt="NumPy"/> &nbsp;
 <img src="https://cdn.simpleicons.org/pytorch/EE4C2C" width="32" height="32" title="PyTorch" alt="PyTorch"/> &nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow/FF6F00" width="32" height="32" title="TensorFlow" alt="TensorFlow"/> &nbsp;
+<img src="https://cdn.simpleicons.org/keras/D00000" width="32" height="32" title="Keras" alt="Keras"/> &nbsp;
+<img src="https://cdn.simpleicons.org/scikitlearn/F7931E" width="32" height="32" title="scikit-learn" alt="scikit-learn"/> &nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" width="32" height="32" title="Matplotlib" alt="Matplotlib"/> &nbsp;
 <img src="https://cdn.simpleicons.org/jupyter/F37626" width="32" height="32" title="Jupyter" alt="Jupyter"/>
 
 **where I came from**
 
 <img src="https://cdn.simpleicons.org/selenium/43B02A" width="32" height="32" title="Selenium" alt="Selenium"/> &nbsp;
 <img src="https://cdn.simpleicons.org/openjdk/FFFFFF" width="32" height="32" title="Java" alt="Java"/> &nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="32" height="32" title="C#" alt="C#"/> &nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg" width="32" height="32" title="Playwright" alt="Playwright"/> &nbsp;
 <img src="https://cdn.simpleicons.org/cucumber/23D96C" width="32" height="32" title="Cucumber" alt="Cucumber"/> &nbsp;
-![RestAssured](https://img.shields.io/badge/-RestAssured-0d1117?style=flat-square)
+<img src="https://cdn.simpleicons.org/postman/FF6C37" width="32" height="32" title="Postman" alt="Postman"/> &nbsp;
+<img src="https://cdn.simpleicons.org/jenkins/D24939" width="32" height="32" title="Jenkins" alt="Jenkins"/> &nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" width="32" height="32" title="Oracle" alt="Oracle"/>
+<br><sub>+ RestAssured, SpecFlow, TestNG — no icon exists for these anywhere reliable, so left off rather than faked</sub>
 
 <br>
 
