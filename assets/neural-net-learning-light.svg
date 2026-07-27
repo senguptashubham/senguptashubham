@@ -10,7 +10,7 @@
     </style>
   </defs>
 
-  <rect x="1" y="1" width="418" height="138" rx="8" fill="#0d1117" stroke="#d0d7de" stroke-width="1.5"/>
+  <rect x="1" y="1" width="418" height="138" rx="8" fill="none" stroke="#d0d7de" stroke-width="1.5"/>
 
   <!-- edges (static, faint) -->
   <g stroke="#d0d7de" stroke-width="1" fill="none">

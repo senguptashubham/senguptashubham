@@ -13,7 +13,7 @@
     </style>
   </defs>
 
-  <rect x="1" y="1" width="418" height="138" rx="8" fill="#0d1117" stroke="#d0d7de" stroke-width="1.5"/>
+  <rect x="1" y="1" width="418" height="138" rx="8" fill="none" stroke="#d0d7de" stroke-width="1.5"/>
 
   <!-- retort stand -->
   <line x1="120" y1="25" x2="120" y2="105" stroke="#d0d7de" stroke-width="3"/>
