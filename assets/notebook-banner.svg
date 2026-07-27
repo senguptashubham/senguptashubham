@@ -1,0 +1,79 @@
+<svg width="800" height="240" viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M 22 0 L 0 0 0 22" fill="none" stroke="#1c2430" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- base + graph-paper grid -->
+  <rect width="800" height="240" fill="#0d1117"/>
+  <rect width="800" height="240" fill="url(#grid)"/>
+  <rect x="1" y="1" width="798" height="238" fill="none" stroke="#30363d" stroke-width="1.5" rx="8"/>
+
+  <!-- pixel-art potted plant, top right, built on a clean local grid -->
+  <g transform="translate(706,18)">
+    <!-- pixel = 7x7, grid is 8 cols x 11 rows -->
+    <rect x="21" y="0"  width="7" height="7" fill="#3fb950"/>
+    <rect x="28" y="0"  width="7" height="7" fill="#3fb950"/>
+
+    <rect x="14" y="7"  width="7" height="7" fill="#3fb950"/>
+    <rect x="21" y="7"  width="7" height="7" fill="#3fb950"/>
+    <rect x="28" y="7"  width="7" height="7" fill="#3fb950"/>
+    <rect x="35" y="7"  width="7" height="7" fill="#3fb950"/>
+
+    <rect x="14" y="14" width="7" height="7" fill="#2ea043"/>
+    <rect x="21" y="14" width="7" height="7" fill="#3fb950"/>
+    <rect x="28" y="14" width="7" height="7" fill="#3fb950"/>
+    <rect x="35" y="14" width="7" height="7" fill="#2ea043"/>
+
+    <rect x="7"  y="21" width="7" height="7" fill="#256e3c"/>
+    <rect x="42" y="21" width="7" height="7" fill="#256e3c"/>
+
+    <rect x="21" y="28" width="7" height="7" fill="#216e39"/>
+    <rect x="28" y="28" width="7" height="7" fill="#216e39"/>
+    <rect x="21" y="35" width="7" height="7" fill="#216e39"/>
+    <rect x="28" y="35" width="7" height="7" fill="#216e39"/>
+    <rect x="21" y="42" width="7" height="7" fill="#216e39"/>
+    <rect x="28" y="42" width="7" height="7" fill="#216e39"/>
+
+    <rect x="14" y="49" width="7" height="7" fill="#241a12"/>
+    <rect x="21" y="49" width="7" height="7" fill="#241a12"/>
+    <rect x="28" y="49" width="7" height="7" fill="#241a12"/>
+    <rect x="35" y="49" width="7" height="7" fill="#241a12"/>
+
+    <rect x="7"  y="56" width="7" height="7" fill="#c9702e"/>
+    <rect x="14" y="56" width="7" height="7" fill="#c9702e"/>
+    <rect x="21" y="56" width="7" height="7" fill="#c9702e"/>
+    <rect x="28" y="56" width="7" height="7" fill="#c9702e"/>
+    <rect x="35" y="56" width="7" height="7" fill="#c9702e"/>
+    <rect x="42" y="56" width="7" height="7" fill="#c9702e"/>
+
+    <rect x="14" y="63" width="7" height="7" fill="#a85d27"/>
+    <rect x="21" y="63" width="7" height="7" fill="#a85d27"/>
+    <rect x="28" y="63" width="7" height="7" fill="#a85d27"/>
+    <rect x="35" y="63" width="7" height="7" fill="#a85d27"/>
+
+    <rect x="14" y="70" width="7" height="7" fill="#8a4a1f"/>
+    <rect x="21" y="70" width="7" height="7" fill="#8a4a1f"/>
+    <rect x="28" y="70" width="7" height="7" fill="#8a4a1f"/>
+    <rect x="35" y="70" width="7" height="7" fill="#8a4a1f"/>
+  </g>
+
+  <!-- title -->
+  <text x="34" y="56" font-family="'Fira Code','Consolas',monospace" font-size="27" font-weight="700" fill="#e6edf3">shubham sengupta</text>
+
+  <!-- margin-note line: the pivot, shown as a correction -->
+  <text x="34" y="92" font-family="'Fira Code','Consolas',monospace" font-size="15">
+    <tspan fill="#6e7681" text-decoration="line-through">Senior SDET</tspan><tspan fill="#8b949e"> → </tspan><tspan fill="#3fb950">understands by rebuilding, verifies by hand</tspan>
+  </text>
+
+  <!-- indented margin annotation, directly under, no floating shapes -->
+  <text x="52" y="114" font-family="'Fira Code','Consolas',monospace" font-style="italic" font-size="13" fill="#d29922">↳ re-derive, don't assume</text>
+
+  <!-- verified lines -->
+  <text x="34" y="152" font-family="'Fira Code','Consolas',monospace" font-size="14" fill="#c9d1d9"><tspan fill="#3fb950">✓ </tspan>ann — derived + coded by hand, no autograd</text>
+  <text x="34" y="177" font-family="'Fira Code','Consolas',monospace" font-size="14" fill="#c9d1d9"><tspan fill="#3fb950">✓ </tspan>sgd vs mini-batch vs full-batch — verified, not assumed</text>
+
+  <!-- footer rule -->
+  <text x="34" y="215" font-family="'Fira Code','Consolas',monospace" font-size="12" fill="#6e7681">notes in the margins, not just the code</text>
+</svg>
