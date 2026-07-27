@@ -1,0 +1,51 @@
+<svg width="420" height="140" viewBox="0 0 420 140" xmlns="http://www.w3.org/2000/svg" font-family="'Fira Code','Consolas',monospace">
+  <defs>
+    <style>
+      .dot0 { animation: pulse 1.6s ease-in-out infinite; }
+      .dot1 { animation: pulse 1.6s ease-in-out infinite; animation-delay: 0.3s; }
+      .dot2 { animation: pulse 1.6s ease-in-out infinite; animation-delay: 0.6s; }
+      @keyframes pulse { 0%,100% { opacity: 0.15; } 50% { opacity: 1; } }
+      .out-glow { animation: glow 2s ease-in-out infinite; }
+      @keyframes glow { 0%,60%,100% { opacity: 0.5; r: 5; } 75% { opacity: 1; r: 7; } }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="418" height="138" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- edges (static, faint) -->
+  <g stroke="#30363d" stroke-width="1" fill="none">
+    <line x1="55" y1="30" x2="105" y2="25"/><line x1="55" y1="30" x2="105" y2="60"/><line x1="55" y1="30" x2="105" y2="95"/>
+    <line x1="55" y1="60" x2="105" y2="25"/><line x1="55" y1="60" x2="105" y2="60"/><line x1="55" y1="60" x2="105" y2="95"/>
+    <line x1="55" y1="90" x2="105" y2="25"/><line x1="55" y1="90" x2="105" y2="60"/><line x1="55" y1="90" x2="105" y2="95"/>
+    <line x1="105" y1="25" x2="155" y2="45"/><line x1="105" y1="25" x2="155" y2="80"/>
+    <line x1="105" y1="60" x2="155" y2="45"/><line x1="105" y1="60" x2="155" y2="80"/>
+    <line x1="105" y1="95" x2="155" y2="45"/><line x1="105" y1="95" x2="155" y2="80"/>
+  </g>
+
+  <!-- traveling signal dots -->
+  <circle r="3" fill="#3fb950">
+    <animateMotion path="M 55 30 L 105 60 L 155 45" dur="2.2s" repeatCount="indefinite" begin="0s"/>
+  </circle>
+  <circle r="3" fill="#3fb950">
+    <animateMotion path="M 55 90 L 105 25 L 155 80" dur="2.2s" repeatCount="indefinite" begin="0.7s"/>
+  </circle>
+  <circle r="3" fill="#3fb950">
+    <animateMotion path="M 55 60 L 105 95 L 155 45" dur="2.2s" repeatCount="indefinite" begin="1.4s"/>
+  </circle>
+
+  <!-- nodes -->
+  <g fill="#c9d1d9">
+    <circle cx="55" cy="30" r="6"/><circle cx="55" cy="60" r="6"/><circle cx="55" cy="90" r="6"/>
+    <circle cx="105" cy="25" r="6"/><circle cx="105" cy="60" r="6"/><circle cx="105" cy="95" r="6"/>
+  </g>
+  <circle cx="155" cy="45" r="6" fill="#3fb950" class="out-glow"/>
+  <circle cx="155" cy="80" r="6" fill="#3fb950" class="out-glow"/>
+
+  <!-- pixel callout bubble -->
+  <g>
+    <rect x="215" y="35" width="170" height="46" fill="none" stroke="#3fb950" stroke-width="1.5"/>
+    <rect x="207" y="43" width="8" height="8" fill="none" stroke="#3fb950" stroke-width="1.5"/>
+    <rect x="199" y="51" width="8" height="8" fill="none" stroke="#3fb950" stroke-width="1.5"/>
+    <text x="230" y="63" font-size="15" fill="#3fb950">learning<tspan class="dot0">.</tspan><tspan class="dot1">.</tspan><tspan class="dot2">.</tspan></text>
+  </g>
+</svg>

@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="./assets/notebook-banner.svg" alt="shubham sengupta" width="100%"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/notebook-banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/notebook-banner-light.svg">
+  <img src="./assets/notebook-banner-dark.svg" alt="shubham sengupta" width="100%"/>
+</picture>
 
 <br><br>
 
@@ -21,7 +25,11 @@ So when I started learning ML, I kept re-deriving instead of trusting. A neural 
 <br>
 
 <div align="center">
-<img src="./assets/neural-net-learning.svg" alt="a small neural net, learning" width="420"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/neural-net-learning-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/neural-net-learning-light.svg">
+  <img src="./assets/neural-net-learning-dark.svg" alt="a small neural net, learning" width="420"/>
+</picture>
 </div>
 
 <br>
@@ -35,7 +43,11 @@ Longer-term, I want to be doing research-grade work in this field, not applying 
 <br>
 
 <div align="center">
-<img src="./assets/lab-flask-testing.svg" alt="a flask, testing" width="420"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/lab-flask-testing-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/lab-flask-testing-light.svg">
+  <img src="./assets/lab-flask-testing-dark.svg" alt="a flask, testing" width="420"/>
+</picture>
 </div>
 
 <br>
@@ -70,14 +82,14 @@ The work lives in **[shubhamLearnsMachine](https://github.com/senguptashubham/sh
 **where I came from**
 
 <img src="https://cdn.simpleicons.org/selenium/43B02A" width="32" height="32" title="Selenium" alt="Selenium"/> &nbsp;
-<img src="https://cdn.simpleicons.org/openjdk/FFFFFF" width="32" height="32" title="Java" alt="Java"/> &nbsp;
+<img src="https://cdn.simpleicons.org/openjdk" width="32" height="32" title="Java" alt="Java"/> &nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="32" height="32" title="C#" alt="C#"/> &nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg" width="32" height="32" title="Playwright" alt="Playwright"/> &nbsp;
 <img src="https://cdn.simpleicons.org/cucumber/23D96C" width="32" height="32" title="Cucumber" alt="Cucumber"/> &nbsp;
 <img src="https://cdn.simpleicons.org/postman/FF6C37" width="32" height="32" title="Postman" alt="Postman"/> &nbsp;
 <img src="https://cdn.simpleicons.org/jenkins/D24939" width="32" height="32" title="Jenkins" alt="Jenkins"/> &nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" width="32" height="32" title="Oracle" alt="Oracle"/>
-<br><sub>+ RestAssured, SpecFlow, TestNG</sub>
+<br><sub>+ RestAssured, SpecFlow, TestNG — no icon exists for these anywhere reliable, so left off rather than faked</sub>
 
 <br>
 
