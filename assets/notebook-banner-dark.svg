@@ -6,7 +6,12 @@
     <style>
       .power-dot { animation: pulse 2.4s ease-in-out infinite; }
       @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
+      .steam { animation: rise 3s ease-in-out infinite; transform-origin: center; }
+      .steam1 { animation-delay: 0s; }
+      .steam2 { animation-delay: 1s; }
+      @keyframes rise { 0% { opacity: 0; transform: translateY(0); } 30% { opacity: 0.6; } 100% { opacity: 0; transform: translateY(-14px); } }
     </style>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2"/></filter>
   </defs>
 
   <!-- base + graph-paper grid -->
@@ -67,6 +72,32 @@
     <rect x="12" y="60" width="6" height="6" fill="#8a4a1f"/>
     <rect x="18" y="60" width="6" height="6" fill="#8a4a1f"/>
     <rect x="24" y="60" width="6" height="6" fill="#8a4a1f"/>
+  </g>
+
+
+  <!-- soft grounding shadows -->
+  <ellipse cx="643" cy="97" rx="30" ry="5" fill="#000000" opacity="0.45" filter="url(#soft)"/>
+  <ellipse cx="724" cy="97" rx="15" ry="4" fill="#000000" opacity="0.45" filter="url(#soft)"/>
+  <ellipse cx="645" cy="153" rx="36" ry="4" fill="#000000" opacity="0.45" filter="url(#soft)"/>
+  <ellipse cx="718" cy="152" rx="17" ry="4" fill="#000000" opacity="0.45" filter="url(#soft)"/>
+
+  <!-- a small stack of books, sitting below the mac -->
+  <g>
+    <rect x="610" y="140" width="64" height="12" fill="#7d2e2e"/>
+    <rect x="610" y="140" width="4" height="12" fill="#a94444"/>
+    <rect x="618" y="128" width="52" height="12" fill="#2a3f6f"/>
+    <rect x="618" y="128" width="4" height="12" fill="#44598f"/>
+    <rect x="626" y="116" width="38" height="12" fill="#8a6d1f"/>
+    <rect x="626" y="116" width="4" height="12" fill="#b08f2c"/>
+  </g>
+
+  <!-- a mug, steam rising -->
+  <g>
+    <rect x="706" y="124" width="24" height="22" fill="#ded3ba"/>
+    <rect x="706" y="124" width="24" height="4" fill="#c4b89e"/>
+    <rect x="728" y="128" width="10" height="14" fill="none" stroke="#ded3ba" stroke-width="3"/>
+    <path d="M 712 122 Q 709 112 713 104" stroke="#c9d1d9" stroke-width="2" fill="none" opacity="0.6" class="steam steam1"/>
+    <path d="M 722 122 Q 725 111 721 102" stroke="#c9d1d9" stroke-width="2" fill="none" opacity="0.6" class="steam steam2"/>
   </g>
 
   <!-- title -->
