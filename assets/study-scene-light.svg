@@ -1,0 +1,326 @@
+<svg width="920" height="400" viewBox="0 0 920 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="an engineer's study at night: a desk with a retro computer, a lamp, a watch, a shelf of books, and a rainy window with a distant neon city outside">
+  <defs>
+    <style>
+      svg {
+        --wood1:#775030; --wood2:#5b3c21; --wood3:#8f6335;
+        --rain:#5b7089; --rainO:0.45;
+        --cloud:#e3e8ee; --moon:#f4efe2; --moonO:0.3;
+        --city1:#a3aeba; --city2:#7f8b9c; --haze:#b3a0be;
+        --neonM:#c07aae; --neonC:#61b3a7; --litO:0.4;
+        --cream:#f3ead4; --cream2:#d5c8a4; --creamEdge:#a3946e;
+        --mac1:#d3c6a9; --mac2:#b9ac8c; --mac3:#9c8f70;
+        --screen:#241f19; --amber:#c98d3d;
+        --ink:#5a4c36; --metal:#5c5744; --metal2:#454033;
+        --leaf1:#567244; --leaf2:#425936;
+        --terra:#a55839; --terra2:#84462c;
+        --paint3:#52637a;
+        --poolO:0.06;
+        --bookA:#70543f; --bookB:#52637a; --bookC:#84462c; --bookD:#61704d; --bookE:#93804b;
+      }
+      .rain line { stroke:var(--rain); opacity:var(--rainO); }
+      .rainA { animation: fall 1.35s linear infinite; }
+      .rainB { animation: fall 1.6s linear infinite; animation-delay:-0.6s; }
+      .rainC { animation: fall 1.15s linear infinite; animation-delay:-0.3s; }
+      @keyframes fall { from { transform: translateY(-40px); } to { transform: translateY(200px); } }
+
+      .cloudA { animation: drift 70s ease-in-out infinite alternate; }
+      .cloudB { animation: drift 95s ease-in-out infinite alternate-reverse; }
+      @keyframes drift { from { transform: translateX(0); } to { transform: translateX(16px); } }
+
+      .lit { opacity: var(--litO); }
+      .flick { animation: flick 9s ease-in-out infinite; }
+      @keyframes flick {
+        0%,44%,56%,69%,75%,100% { opacity: var(--litO); }
+        50% { opacity: 0.2; }
+        72% { opacity: 0.45; }
+      }
+
+      .cursor { animation: blink 1.1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity:0; } }
+
+      .steam { fill:none; stroke:var(--cream2); stroke-width:1.6; stroke-linecap:round; opacity:0; }
+      .steamA { animation: rise 3.8s ease-in-out infinite; }
+      .steamB { animation: rise 3.8s ease-in-out infinite; animation-delay:1.7s; }
+      @keyframes rise {
+        0% { opacity:0; transform: translateY(0); }
+        25% { opacity:0.45; }
+        100% { opacity:0; transform: translateY(-16px); }
+      }
+
+      .secondhand { animation: sweep 60s linear infinite; transform-origin: 372px 262px; }
+      @keyframes sweep { to { transform: rotate(360deg); } }
+
+      .lampglow { animation: breathe 7s ease-in-out infinite; }
+      @keyframes breathe { 0%,100% { opacity:0.55; } 50% { opacity:0.85; } }
+
+      @media (prefers-reduced-motion: reduce) {
+        .rainA,.rainB,.rainC,.cloudA,.cloudB,.cursor,.steamA,.steamB,.secondhand,.lampglow,.flick { animation:none; }
+        .steam { opacity:0.3; }
+      }
+    </style>
+
+    <radialGradient id="glow" cx="50%" cy="55%" r="60%">
+      <stop offset="0%" stop-color="#c98d3d" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#c98d3d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moonglow">
+      <stop offset="30%" stop-color="#f4efe2" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#f4efe2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skygrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b7c3cf"/>
+      <stop offset="55%" stop-color="#c7d0d9"/>
+      <stop offset="100%" stop-color="#cfccd4"/>
+    </linearGradient>
+    <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c98d3d" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#c98d3d" stop-opacity="0.015"/>
+    </linearGradient>
+    <linearGradient id="floorfade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="fadeMask">
+      <rect x="0" y="0" width="920" height="296" fill="#ffffff"/>
+      <rect x="0" y="296" width="920" height="80" fill="url(#floorfade)"/>
+    </mask>
+    <filter id="blurFar" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.4"/></filter>
+    <filter id="blurGlow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="2.6"/></filter>
+    <clipPath id="panes">
+      <rect x="97" y="41" width="95" height="74"/>
+      <rect x="199" y="41" width="104" height="74"/>
+      <rect x="97" y="122" width="95" height="97"/>
+      <rect x="199" y="122" width="104" height="97"/>
+    </clipPath>
+  </defs>
+
+  <!-- ambient lamplight -->
+  <ellipse cx="470" cy="245" rx="440" ry="195" fill="url(#glow)"/>
+
+  <!-- ============ window: rainy night, neon city far below ============ -->
+  <g>
+    <rect x="97" y="41" width="206" height="178" fill="url(#skygrad)"/>
+    <g clip-path="url(#panes)">
+      <!-- moon -->
+      <circle cx="272" cy="72" r="20" fill="url(#moonglow)"/>
+      <circle cx="272" cy="72" r="10" fill="var(--moon)" opacity="var(--moonO)"/>
+      <circle cx="268" cy="69" r="2.4" fill="#cfccd4" opacity="0.5"/>
+      <circle cx="276" cy="76" r="1.6" fill="#cfccd4" opacity="0.5"/>
+      <!-- clouds -->
+      <g class="cloudA" fill="var(--cloud)">
+        <ellipse cx="148" cy="76" rx="34" ry="11"/>
+        <ellipse cx="170" cy="68" rx="22" ry="9"/>
+      </g>
+      <g class="cloudB" fill="var(--cloud)" opacity="0.8">
+        <ellipse cx="238" cy="106" rx="30" ry="9"/>
+        <ellipse cx="216" cy="99" rx="18" ry="7"/>
+      </g>
+      <!-- far skyline, blurred: the city through wet glass -->
+      <g fill="var(--city1)" filter="url(#blurFar)">
+        <rect x="100" y="140" width="16" height="36"/>
+        <rect x="118" y="132" width="14" height="44"/>
+        <rect x="134" y="146" width="20" height="30"/>
+        <rect x="156" y="126" width="16" height="50"/>
+        <rect x="174" y="138" width="12" height="38"/>
+        <rect x="188" y="122" width="18" height="54"/>
+        <rect x="208" y="136" width="14" height="40"/>
+        <rect x="224" y="144" width="18" height="32"/>
+        <rect x="244" y="130" width="14" height="46"/>
+        <rect x="260" y="138" width="20" height="38"/>
+        <rect x="282" y="146" width="14" height="30"/>
+        <rect x="298" y="140" width="10" height="36"/>
+      </g>
+      <!-- city haze at the horizon -->
+      <rect x="97" y="156" width="206" height="24" fill="var(--haze)" opacity="0.16" filter="url(#blurGlow)"/>
+      <!-- near skyline -->
+      <g fill="var(--city2)">
+        <rect x="104" y="148" width="26" height="71"/>
+        <rect x="146" y="158" width="22" height="61"/>
+        <rect x="184" y="142" width="30" height="77"/>
+        <rect x="230" y="154" width="24" height="65"/>
+        <rect x="262" y="148" width="26" height="71"/>
+        <rect x="296" y="158" width="7" height="61"/>
+      </g>
+      <!-- lit windows, tiny and far -->
+      <g>
+        <rect class="lit" x="110" y="156" width="3" height="3" fill="var(--amber)"/>
+        <rect class="lit" x="120" y="164" width="3" height="3" fill="var(--neonC)"/>
+        <rect class="lit" x="110" y="176" width="3" height="3" fill="var(--amber)"/>
+        <rect class="lit" x="152" y="166" width="3" height="3" fill="var(--amber)"/>
+        <rect class="lit flick" x="160" y="174" width="3" height="3" fill="var(--neonM)"/>
+        <rect class="lit" x="190" y="150" width="3" height="3" fill="var(--amber)"/>
+        <rect class="lit" x="198" y="158" width="3" height="3" fill="var(--amber)"/>
+        <rect class="lit" x="206" y="150" width="3" height="3" fill="var(--neonC)"/>
+        <rect class="lit" x="190" y="168" width="3" height="3" fill="var(--amber)"/>
+        <rect class="lit" x="236" y="162" width="3" height="3" fill="var(--amber)"/>
+        <rect class="lit flick" x="244" y="170" width="3" height="3" fill="var(--amber)"/>
+        <rect class="lit" x="268" y="156" width="3" height="3" fill="var(--neonC)"/>
+        <rect class="lit" x="276" y="164" width="3" height="3" fill="var(--amber)"/>
+        <rect class="lit" x="268" y="178" width="3" height="3" fill="var(--amber)"/>
+      </g>
+      <!-- one neon sign, glowing -->
+      <rect x="209" y="150" width="4" height="24" fill="var(--neonM)" opacity="0.25" filter="url(#blurGlow)"/>
+      <rect class="lit" x="209" y="150" width="4" height="24" fill="var(--neonM)"/>
+      <!-- rain, three depths -->
+      <g class="rain">
+        <g class="rainA" stroke-width="1.3" stroke-linecap="round">
+          <line x1="112" y1="52" x2="109" y2="66"/>
+          <line x1="148" y1="34" x2="145" y2="48"/>
+          <line x1="184" y1="58" x2="181" y2="72"/>
+          <line x1="220" y1="40" x2="217" y2="54"/>
+          <line x1="256" y1="52" x2="253" y2="66"/>
+          <line x1="290" y1="44" x2="287" y2="58"/>
+        </g>
+        <g class="rainB" stroke-width="1.1" stroke-linecap="round" opacity="0.7">
+          <line x1="128" y1="46" x2="125" y2="58"/>
+          <line x1="164" y1="30" x2="161" y2="42"/>
+          <line x1="200" y1="52" x2="197" y2="64"/>
+          <line x1="238" y1="34" x2="235" y2="46"/>
+          <line x1="272" y1="48" x2="269" y2="60"/>
+        </g>
+        <g class="rainC" stroke-width="1.5" stroke-linecap="round">
+          <line x1="120" y1="38" x2="117" y2="54"/>
+          <line x1="172" y1="46" x2="169" y2="62"/>
+          <line x1="212" y1="30" x2="209" y2="46"/>
+          <line x1="248" y1="42" x2="245" y2="58"/>
+          <line x1="282" y1="34" x2="279" y2="50"/>
+        </g>
+      </g>
+    </g>
+    <!-- frame -->
+    <g fill="var(--wood1)">
+      <rect x="84" y="28" width="232" height="13" rx="3"/>
+      <rect x="84" y="28" width="13" height="204" rx="3"/>
+      <rect x="303" y="28" width="13" height="204" rx="3"/>
+      <rect x="84" y="219" width="232" height="13" rx="3"/>
+      <rect x="192" y="41" width="7" height="178"/>
+      <rect x="97" y="115" width="206" height="7"/>
+    </g>
+    <rect x="84" y="28" width="232" height="13" rx="3" fill="var(--wood3)" opacity="0.35"/>
+    <!-- sill + succulent -->
+    <rect x="76" y="232" width="248" height="12" rx="3" fill="var(--wood1)"/>
+    <rect x="76" y="232" width="248" height="3" rx="1.5" fill="var(--wood3)" opacity="0.5"/>
+    <g transform="translate(150,10)">
+      <path d="M116 222 l3 -12 q3 -4 6 0 l3 12 z" fill="var(--leaf1)"/>
+      <path d="M112 222 q-4 -8 1 -13 q3 5 3 13 z" fill="var(--leaf2)"/>
+      <path d="M130 222 q4 -8 -1 -13 q-3 5 -3 13 z" fill="var(--leaf2)"/>
+      <path d="M108 222 h28 l-3 10 h-22 z" fill="var(--terra)"/>
+    </g>
+  </g>
+
+  <!-- ============ pinned note ============ -->
+  <g transform="translate(352,58) rotate(-3)">
+    <rect x="0" y="0" width="128" height="58" rx="2" fill="var(--cream)" stroke="var(--creamEdge)" stroke-width="1"/>
+    <circle cx="64" cy="7" r="3.4" fill="var(--terra)"/>
+    <text x="14" y="30" font-family="ui-monospace,'Courier New',monospace" font-size="11" fill="var(--ink)">verify by hand,</text>
+    <text x="14" y="45" font-family="ui-monospace,'Courier New',monospace" font-size="11" fill="var(--ink)">not by faith</text>
+  </g>
+
+  <!-- ============ shelf: books, bust, plant ============ -->
+  <g>
+    <path d="M848 108 q4 18 -2 34" fill="none" stroke="var(--leaf1)" stroke-width="1.6"/>
+    <path d="M856 108 q6 14 2 26" fill="none" stroke="var(--leaf2)" stroke-width="1.4"/>
+    <circle cx="845" cy="128" r="2.6" fill="var(--leaf1)"/>
+    <circle cx="847" cy="140" r="2.3" fill="var(--leaf2)"/>
+    <circle cx="857" cy="126" r="2.3" fill="var(--leaf2)"/>
+    <circle cx="859" cy="134" r="2" fill="var(--leaf1)"/>
+    <g>
+      <rect x="648" y="62" width="15" height="48" rx="2" fill="var(--bookA)"/>
+      <rect x="666" y="56" width="17" height="54" rx="2" fill="var(--bookB)"/>
+      <rect x="686" y="64" width="14" height="46" rx="2" fill="var(--bookC)"/>
+      <rect x="703" y="58" width="16" height="52" rx="2" fill="var(--bookD)"/>
+      <g transform="rotate(12 738 110)">
+        <rect x="731" y="60" width="14" height="50" rx="2" fill="var(--bookE)"/>
+      </g>
+    </g>
+    <g transform="translate(778,68)">
+      <path d="M14 0 q10 0 11 10 q1 8 -4 13 q-2 3 -1 7 l3 6 h-18 l3 -6 q1 -4 -1 -7 q-5 -5 -4 -13 q1 -10 11 -10 z" fill="var(--cream)" stroke="var(--creamEdge)" stroke-width="0.8"/>
+      <rect x="0" y="36" width="28" height="6" rx="1.5" fill="var(--cream2)"/>
+    </g>
+    <path d="M832 96 h24 l-3 12 h-18 z" fill="var(--terra2)"/>
+    <path d="M838 96 q-6 -10 0 -16 q4 6 3 16 z" fill="var(--leaf1)"/>
+    <path d="M848 96 q6 -10 0 -16 q-4 6 -3 16 z" fill="var(--leaf2)"/>
+    <rect x="636" y="110" width="252" height="10" rx="3" fill="var(--wood1)"/>
+    <rect x="636" y="110" width="252" height="3" rx="1.5" fill="var(--wood3)" opacity="0.5"/>
+    <path d="M652 120 l-6 12 M872 120 l6 12" stroke="var(--wood2)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- ============ desk lamp, light aligned with the shade mouth ============ -->
+  <g>
+    <path class="lampglow" d="M683 196 L711 216 L705 279 L585 279 Z" fill="url(#cone)"/>
+    <ellipse class="lampglow" cx="645" cy="283" rx="88" ry="7" fill="var(--amber)" opacity="var(--poolO)"/>
+    <rect x="726" y="272" width="54" height="9" rx="4" fill="var(--metal2)"/>
+    <path d="M753 274 v-52" fill="none" stroke="var(--metal)" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M753 222 L712 190" fill="none" stroke="var(--metal)" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="753" cy="222" r="3.2" fill="var(--metal2)"/>
+    <path d="M683 196 L698.6 180 L721 196 L711 216 Z" fill="var(--metal)"/>
+    <line x1="683" y1="196" x2="711" y2="216" stroke="var(--amber)" stroke-width="3.5" stroke-linecap="round" class="lampglow"/>
+  </g>
+
+  <!-- ============ objects on the desk ============ -->
+  <g>
+    <rect x="252" y="266" width="80" height="9" rx="2" fill="var(--paint3)"/>
+    <rect x="258" y="258" width="72" height="9" rx="2" fill="var(--terra2)"/>
+    <rect x="258" y="258" width="6" height="9" fill="var(--cream2)"/>
+    <g transform="rotate(-4 290 252)">
+      <rect x="262" y="250" width="52" height="4" rx="2" fill="var(--amber)"/>
+      <path d="M314 250 l7 2 l-7 2 z" fill="var(--cream)"/>
+      <rect x="258" y="250" width="6" height="4" rx="2" fill="var(--terra)"/>
+    </g>
+  </g>
+
+  <g>
+    <rect x="338" y="258" width="26" height="9" rx="4" fill="var(--wood2)"/>
+    <rect x="380" y="258" width="26" height="9" rx="4" fill="var(--wood2)"/>
+    <circle cx="372" cy="262" r="17" fill="var(--metal)"/>
+    <circle cx="372" cy="262" r="14" fill="var(--cream)"/>
+    <g stroke="var(--ink)" stroke-width="1">
+      <line x1="372" y1="250.5" x2="372" y2="253"/>
+      <line x1="372" y1="271" x2="372" y2="273.5"/>
+      <line x1="360.5" y1="262" x2="363" y2="262"/>
+      <line x1="381" y1="262" x2="383.5" y2="262"/>
+    </g>
+    <line x1="372" y1="262" x2="372" y2="254" stroke="var(--ink)" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1="372" y1="262" x2="378" y2="265" stroke="var(--ink)" stroke-width="1.6" stroke-linecap="round"/>
+    <line class="secondhand" x1="372" y1="266" x2="372" y2="251" stroke="var(--terra)" stroke-width="0.9" stroke-linecap="round"/>
+    <circle cx="372" cy="262" r="1.4" fill="var(--metal2)"/>
+    <rect x="388" y="259.5" width="3.5" height="5" rx="1" fill="var(--metal2)"/>
+  </g>
+
+  <g transform="translate(432,158)">
+    <path d="M6 0 h96 q6 0 6 6 v92 h-108 v-92 q0 -6 6 -6 z" fill="var(--mac1)"/>
+    <path d="M0 98 h108 v10 q0 4 -4 4 h-100 q-4 0 -4 -4 z" fill="var(--mac2)"/>
+    <rect x="12" y="10" width="84" height="62" rx="4" fill="var(--mac3)"/>
+    <rect x="16" y="14" width="76" height="54" rx="2" fill="var(--screen)"/>
+    <g stroke="var(--amber)" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 20 v40 h64" opacity="0.4" stroke-width="1"/>
+      <path d="M24 24 l7 12 l5 -4 l7 9 l5 -2 l8 6 l6 -1 l8 4 l7 0.5 l7 2"/>
+    </g>
+    <rect class="cursor" x="80" y="56" width="5" height="7" fill="var(--amber)"/>
+    <rect x="62" y="80" width="30" height="4" rx="1.5" fill="var(--mac3)"/>
+    <rect x="14" y="82" width="10" height="6" rx="1" fill="var(--mac2)"/>
+    <path d="M18 112 h72 v6 h8 v4 h-88 v-4 h8 z" fill="var(--mac3)"/>
+  </g>
+
+  <g>
+    <path class="steam steamA" d="M588 232 q-3 -7 1 -12 q4 -5 1 -11"/>
+    <path class="steam steamB" d="M600 234 q3 -7 -1 -12 q-4 -5 -1 -11"/>
+    <path d="M580 246 h30 q1 16 -6 26 q-2 4 -9 4 q-7 0 -9 -4 q-7 -10 -6 -26 z" fill="var(--terra)"/>
+    <path d="M610 250 q10 0 9 9 q-1 8 -10 8 l1 -4 q5 0 6 -4 q0 -5 -6 -5 z" fill="var(--terra)"/>
+    <path d="M582 250 q13 4 26 0" fill="none" stroke="var(--terra2)" stroke-width="2"/>
+  </g>
+
+  <!-- ============ the desk ============ -->
+  <rect x="70" y="280" width="780" height="15" rx="4" fill="var(--wood1)"/>
+  <rect x="70" y="280" width="780" height="4" rx="2" fill="var(--wood3)" opacity="0.6"/>
+  <g stroke="var(--wood2)" stroke-width="1" opacity="0.5">
+    <path d="M150 288 q120 3 240 0"/>
+    <path d="M480 290 q100 -3 200 0"/>
+  </g>
+  <rect x="80" y="295" width="760" height="8" rx="3" fill="var(--wood2)"/>
+
+  <g mask="url(#fadeMask)">
+    <rect x="118" y="303" width="14" height="72" fill="var(--wood2)"/>
+    <rect x="788" y="303" width="14" height="72" fill="var(--wood2)"/>
+  </g>
+</svg>

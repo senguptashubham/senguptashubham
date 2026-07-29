@@ -1,0 +1,93 @@
+<svg width="460" height="280" viewBox="0 0 460 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="a hand-sketched neural network with margin notes, a signal passing forward and a gradient flowing back">
+  <defs>
+    <style>
+      svg {
+        --ink:#4a3f2e; --faint:#9a8d70; --amber:#c98d3d; --terra:#a55839;
+      }
+      text { font-family: ui-monospace,'Courier New',monospace; fill: var(--ink); }
+      .edge { stroke: var(--faint); stroke-width: 1; opacity: 0.45; fill: none; }
+      .node { stroke: var(--ink); stroke-width: 1.4; fill: none; stroke-linecap: round; }
+
+      .fwd { animation: fwd 6s ease-in-out infinite; }
+      @keyframes fwd {
+        0%   { transform: translate(70px,140px); opacity: 0; }
+        6%   { opacity: 0.9; }
+        30%  { transform: translate(220px,110px); opacity: 0.9; }
+        55%  { transform: translate(370px,100px); opacity: 0.9; }
+        62%  { opacity: 0; }
+        100% { transform: translate(370px,100px); opacity: 0; }
+      }
+      .bwd { animation: bwd 6s ease-in-out infinite; }
+      @keyframes bwd {
+        0%,58% { transform: translate(370px,180px); opacity: 0; }
+        63%  { opacity: 0.85; }
+        78%  { transform: translate(220px,230px); opacity: 0.85; }
+        94%  { transform: translate(70px,210px); opacity: 0.85; }
+        100% { transform: translate(70px,210px); opacity: 0; }
+      }
+      @media (prefers-reduced-motion: reduce) { .fwd,.bwd { animation: none; opacity: 0; } }
+    </style>
+    <!-- a slightly imperfect, twice-traced circle: reads as pen on paper -->
+    <g id="n">
+      <path class="node" d="M -13 0 a 13 13 0 1 1 26 0 a 13 13 0 1 1 -26 0"/>
+      <path class="node" d="M -12.4 1 a 12.8 13.4 8 1 1 25.4 -1.6" opacity="0.5" stroke-width="0.9"/>
+    </g>
+  </defs>
+
+  <!-- edges -->
+  <g class="edge">
+    <path d="M83 70 Q150 55 207 50"/>
+    <path d="M83 70 Q150 90 207 110"/>
+    <path d="M83 70 Q150 125 207 170"/>
+    <path d="M83 70 Q145 160 208 225"/>
+    <path d="M83 140 Q150 95 207 55"/>
+    <path d="M83 140 Q150 122 207 112"/>
+    <path d="M83 140 Q150 158 207 168"/>
+    <path d="M83 140 Q150 190 207 227"/>
+    <path d="M83 210 Q145 135 208 58"/>
+    <path d="M83 210 Q150 165 207 115"/>
+    <path d="M83 210 Q150 192 207 172"/>
+    <path d="M83 210 Q150 222 207 229"/>
+    <path d="M233 50 Q300 70 357 97"/>
+    <path d="M233 110 Q300 102 357 100"/>
+    <path d="M233 170 Q300 132 357 103"/>
+    <path d="M233 230 Q300 165 357 107"/>
+    <path d="M233 50 Q302 118 357 175"/>
+    <path d="M233 110 Q300 148 357 177"/>
+    <path d="M233 170 Q300 178 357 179"/>
+    <path d="M233 230 Q300 208 357 182"/>
+  </g>
+
+  <!-- nodes -->
+  <use href="#n" transform="translate(70,70)"/>
+  <use href="#n" transform="translate(70,140)"/>
+  <use href="#n" transform="translate(70,210)"/>
+  <use href="#n" transform="translate(220,50)"/>
+  <use href="#n" transform="translate(220,110)"/>
+  <use href="#n" transform="translate(220,170)"/>
+  <use href="#n" transform="translate(220,230)"/>
+  <use href="#n" transform="translate(370,100)"/>
+  <use href="#n" transform="translate(370,180)"/>
+
+  <!-- the two travelling signals -->
+  <circle class="fwd" r="3.2" fill="var(--amber)"/>
+  <circle class="bwd" r="3.2" fill="var(--terra)"/>
+
+  <!-- margin notes -->
+  <text x="52" y="34" font-size="12">x</text>
+  <text x="196" y="22" font-size="12">σ(w·x + b)</text>
+  <path d="M232 27 q10 8 4 16" fill="none" stroke="var(--faint)" stroke-width="1" marker-end="none"/>
+  <path d="M236 43 l0.5 -5 M236 43 l-4.5 -2" stroke="var(--faint)" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <text x="390" y="96" font-size="12">ŷ</text>
+
+  <!-- backprop note, along the bottom -->
+  <path d="M352 210 Q240 262 92 240" fill="none" stroke="var(--terra)" stroke-width="1" opacity="0.55" stroke-dasharray="3 4"/>
+  <path d="M92 240 l7 -3 M92 240 l7 3" stroke="var(--terra)" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <text x="168" y="270" font-size="11" fill="var(--terra)" opacity="0.9">∂L/∂w — derived by hand, then checked against autograd</text>
+
+  <!-- a crossed-out earlier attempt, because notebooks have those -->
+  <g opacity="0.5">
+    <text x="366" y="240" font-size="11">3-5-2?</text>
+    <path d="M362 236 l46 -6 M362 231 l46 8" stroke="var(--faint)" stroke-width="1" stroke-linecap="round"/>
+  </g>
+</svg>

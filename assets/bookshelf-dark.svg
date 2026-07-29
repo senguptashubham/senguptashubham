@@ -1,0 +1,86 @@
+<svg width="920" height="340" viewBox="0 0 920 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="two shelves of books: current machine-learning tools on top, the testing tools that came before on the bottom">
+  <defs>
+    <style>
+      svg {
+        --wood1:#8a5a33; --wood2:#6e4525; --wood3:#a8713f;
+        --faint:#8a7f66; --spine:#e9dfc4;
+        --bA:#7a5c46; --bB:#5b6d84; --bC:#8f4c31; --bD:#6b7a55; --bE:#a08b52; --bF:#4f6b64;
+        --leaf1:#5d7a4a; --leaf2:#48613a; --terra:#b0603f;
+      }
+      text { font-family: ui-monospace,'Courier New',monospace; }
+      .spine { fill: var(--spine); font-size: 11px; text-anchor: middle; }
+      .label { fill: var(--faint); font-size: 11px; font-style: italic; }
+      .book { rx: 2; }
+    </style>
+  </defs>
+
+  <!-- ================= shelf one: now ================= -->
+  <g>
+    <rect class="book" x="140" y="42"  width="30" height="108" fill="var(--bB)"/>
+    <text class="spine" transform="translate(155,96) rotate(-90)" dy="4">python</text>
+    <rect class="book" x="175" y="50"  width="30" height="100" fill="var(--bC)"/>
+    <text class="spine" transform="translate(190,100) rotate(-90)" dy="4">numpy</text>
+    <rect class="book" x="210" y="36"  width="32" height="114" fill="var(--bA)"/>
+    <text class="spine" transform="translate(226,93) rotate(-90)" dy="4">pytorch</text>
+    <rect class="book" x="247" y="46"  width="32" height="104" fill="var(--bD)"/>
+    <text class="spine" transform="translate(263,98) rotate(-90)" dy="4">tensorflow</text>
+    <rect class="book" x="284" y="54"  width="28" height="96"  fill="var(--bE)"/>
+    <text class="spine" transform="translate(298,102) rotate(-90)" dy="4">keras</text>
+    <rect class="book" x="317" y="32"  width="34" height="118" fill="var(--bF)"/>
+    <text class="spine" transform="translate(334,91) rotate(-90)" dy="4">scikit-learn</text>
+    <rect class="book" x="356" y="44"  width="32" height="106" fill="var(--bC)"/>
+    <text class="spine" transform="translate(372,97) rotate(-90)" dy="4">matplotlib</text>
+    <!-- jupyter, leaning against the bookend -->
+    <g transform="rotate(10 424 150)">
+      <rect class="book" x="394" y="48" width="30" height="102" fill="var(--bB)"/>
+      <text class="spine" transform="translate(409,99) rotate(-90)" dy="4">jupyter</text>
+    </g>
+    <!-- bookend -->
+    <path d="M446 150 v-52 h7 v45 h26 v7 z" fill="var(--faint)" opacity="0.85"/>
+
+    <!-- two books lying flat, read recently -->
+    <rect class="book" x="580" y="138" width="88" height="12" fill="var(--bD)"/>
+    <rect class="book" x="590" y="126" width="70" height="12" fill="var(--bE)"/>
+    <!-- small plant at the end of the plank -->
+    <path d="M718 137 h24 l-3 13 h-18 z" fill="var(--terra)"/>
+    <path d="M726 137 q-7 -12 -1 -19 q5 7 4 19 z" fill="var(--leaf1)"/>
+    <path d="M734 137 q7 -12 1 -19 q-5 7 -4 19 z" fill="var(--leaf2)"/>
+    <path d="M730 137 q0 -14 0 -16" stroke="var(--leaf2)" stroke-width="1.5" fill="none"/>
+
+    <text class="label" x="768" y="144">· now</text>
+    <rect x="120" y="150" width="680" height="10" rx="3" fill="var(--wood1)"/>
+    <rect x="120" y="150" width="680" height="3" rx="1.5" fill="var(--wood3)" opacity="0.5"/>
+    <path d="M140 160 l-7 13 M780 160 l7 13" stroke="var(--wood2)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- ================= shelf two: then ================= -->
+  <g>
+    <rect class="book" x="140" y="184" width="32" height="106" fill="var(--bD)"/>
+    <text class="spine" transform="translate(156,237) rotate(-90)" dy="4">selenium</text>
+    <rect class="book" x="177" y="192" width="28" height="98"  fill="var(--bC)"/>
+    <text class="spine" transform="translate(191,241) rotate(-90)" dy="4">java</text>
+    <rect class="book" x="210" y="180" width="26" height="110" fill="var(--bB)"/>
+    <text class="spine" transform="translate(223,235) rotate(-90)" dy="4">c#</text>
+    <rect class="book" x="241" y="190" width="32" height="100" fill="var(--bA)"/>
+    <text class="spine" transform="translate(257,240) rotate(-90)" dy="4">playwright</text>
+    <rect class="book" x="278" y="178" width="32" height="112" fill="var(--bF)"/>
+    <text class="spine" transform="translate(294,234) rotate(-90)" dy="4">cucumber</text>
+    <rect class="book" x="315" y="194" width="30" height="96"  fill="var(--bE)"/>
+    <text class="spine" transform="translate(330,242) rotate(-90)" dy="4">postman</text>
+    <rect class="book" x="350" y="182" width="30" height="108" fill="var(--bC)"/>
+    <text class="spine" transform="translate(365,236) rotate(-90)" dy="4">jenkins</text>
+    <rect class="book" x="385" y="190" width="30" height="100" fill="var(--bB)"/>
+    <text class="spine" transform="translate(400,240) rotate(-90)" dy="4">oracle</text>
+    <path d="M420 290 v-52 h7 v45 h26 v7 z" fill="var(--faint)" opacity="0.85"/>
+
+    <!-- flat stack, a little dusty -->
+    <rect class="book" x="580" y="278" width="88" height="12" fill="var(--bA)"/>
+    <rect class="book" x="588" y="266" width="72" height="12" fill="var(--bB)"/>
+
+    <text class="label" x="768" y="284">· then</text>
+    <rect x="120" y="290" width="680" height="10" rx="3" fill="var(--wood1)"/>
+    <rect x="120" y="290" width="680" height="3" rx="1.5" fill="var(--wood3)" opacity="0.5"/>
+    <path d="M140 300 l-7 13 M780 300 l7 13" stroke="var(--wood2)" stroke-width="3" stroke-linecap="round"/>
+    <text class="label" x="560" y="328">+ restassured · specflow · testng, boxed up somewhere</text>
+  </g>
+</svg>
