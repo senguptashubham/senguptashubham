@@ -89,7 +89,7 @@ The work lives in **[shubhamLearnsMachine](https://github.com/senguptashubham/sh
 <img src="https://cdn.simpleicons.org/postman/FF6C37" width="32" height="32" title="Postman" alt="Postman"/> &nbsp;
 <img src="https://cdn.simpleicons.org/jenkins/D24939" width="32" height="32" title="Jenkins" alt="Jenkins"/> &nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" width="32" height="32" title="Oracle" alt="Oracle"/>
-<br><sub>+ RestAssured, SpecFlow, TestNG — no icon exists for these anywhere reliable, so left off rather than faked</sub>
+<br><sub>+ RestAssured, SpecFlow, TestNG</sub>
 
 <br>
 
