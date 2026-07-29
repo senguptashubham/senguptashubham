@@ -100,5 +100,4 @@ The work lives in **[shubhamLearnsMachine](https://github.com/senguptashubham/sh
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/-senguptashubham-0d1117?style=flat-square&logo=linkedin&logoColor=0A66C2)](https://www.linkedin.com/in/senguptashubham)
-
 </div>
