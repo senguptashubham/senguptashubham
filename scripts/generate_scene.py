@@ -191,14 +191,27 @@ def snow_svg(p, rng):
     return "\n      ".join(out)
 
 
+def wind_svg(p):
+    """Two drifting gust streaks and a small leaf tumbling across the panes.
+    Positions come entirely from the keyframes; everything stays clipped."""
+    return f'''<g>
+        <path class="wind windA" d="M104 66 q18 -6 36 0 q16 5 30 -1"/>
+        <path class="wind windB" d="M120 96 q16 -5 32 0 q14 4 26 -1"/>
+        <g class="leafG">
+          <path d="M0 0 q4 -5 8 0 q-4 5 -8 0 z" fill="{p["leaf1"]}"/>
+          <path d="M8 0 l3 -1.5" stroke="{p["leaf2"]}" stroke-width="1" stroke-linecap="round"/>
+        </g>
+      </g>'''
+
+
 def sky_contents(preset, mode, p, rng, phase):
     """Everything weather-ish inside the panes, behind the city."""
     if preset == "clear":
         celestial = moon_svg(p, phase) if mode == "dark" else sun_svg(p)
         extra = stars_svg(p, rng) if mode == "dark" else ""
-        return f'{celestial}\n      {extra}\n      {clouds_svg(p, "few")}', ""
+        return f'{celestial}\n      {extra}\n      {clouds_svg(p, "few")}', wind_svg(p)
     if preset == "overcast":
-        return clouds_svg(p, "heavy"), ""
+        return clouds_svg(p, "heavy"), wind_svg(p)
     if preset == "rain":
         return clouds_svg(p, "some"), RAIN_SVG
     if preset == "snow":
@@ -323,6 +336,25 @@ def build_svg(mode, preset, d, phase, seed):
       .cloudA {{ animation: drift 70s ease-in-out infinite alternate; }}
       .cloudB {{ animation: drift 95s ease-in-out infinite alternate-reverse; }}
       @keyframes drift {{ from {{ transform: translateX(0); }} to {{ transform: translateX(16px); }} }}
+      .wind {{ fill:none; stroke:{p["rain"]}; stroke-width:1.4; stroke-linecap:round; opacity:0; }}
+      .windA {{ animation: gust 9s ease-in-out infinite; }}
+      .windB {{ animation: gust 9s ease-in-out infinite; animation-delay:4.5s; }}
+      @keyframes gust {{
+        0% {{ transform: translateX(-50px); opacity:0; }}
+        15% {{ opacity:0.3; }}
+        55% {{ opacity:0.2; }}
+        100% {{ transform: translateX(230px); opacity:0; }}
+      }}
+      .leafG {{ animation: leaffly 13s linear infinite; }}
+      @keyframes leaffly {{
+        0% {{ transform: translate(80px,52px) rotate(0deg); opacity:0; }}
+        8% {{ opacity:0.85; }}
+        30% {{ transform: translate(140px,74px) rotate(160deg); opacity:0.85; }}
+        55% {{ transform: translate(205px,58px) rotate(300deg); opacity:0.85; }}
+        80% {{ transform: translate(262px,84px) rotate(460deg); opacity:0.8; }}
+        94% {{ opacity:0; }}
+        100% {{ transform: translate(310px,68px) rotate(540deg); opacity:0; }}
+      }}
       .lit {{ opacity: {p["litO"]}; }}
       .flick {{ animation: flick 9s ease-in-out infinite; }}
       @keyframes flick {{
@@ -345,7 +377,8 @@ def build_svg(mode, preset, d, phase, seed):
       .lampglow {{ animation: breathe 7s ease-in-out infinite; }}
       @keyframes breathe {{ 0%,100% {{ opacity:0.55; }} 50% {{ opacity:0.85; }} }}
       @media (prefers-reduced-motion: reduce) {{
-        .rainA,.rainB,.rainC,.snowA,.snowB,.snowC,.cloudA,.cloudB,.cursor,.steamA,.steamB,.secondhand,.lampglow,.flick {{ animation:none; }}
+        .rainA,.rainB,.rainC,.snowA,.snowB,.snowC,.cloudA,.cloudB,.cursor,.steamA,.steamB,.secondhand,.lampglow,.flick,.windA,.windB,.leafG {{ animation:none; }}
+        .leafG {{ opacity:0; }}
         .steam {{ opacity:0.3; }}
       }}
     </style>
