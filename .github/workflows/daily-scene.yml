@@ -1,0 +1,34 @@
+name: daily scene
+
+on:
+  schedule:
+    - cron: "15 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-scene
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: render today's scene
+        run: python3 scripts/generate_scene.py
+
+      - name: commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/study-scene-dark.svg assets/study-scene-light.svg
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "scene: $(date -u +%F)"
+            git push
+          fi
