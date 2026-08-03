@@ -99,11 +99,13 @@
   <g>
     <rect x="97" y="41" width="206" height="178" fill="url(#skygrad)"/>
     <g clip-path="url(#panes)">
-      <circle cx="272" cy="72" r="22" fill="url(#sunglow)"/>
-      <circle cx="272" cy="72" r="11" fill="#ead9a0"/>
-      
-      <ellipse class="cloudA" cx="150" cy="78" rx="30" ry="10" fill="#e3e8ee" opacity="1.0"/>
-      <ellipse class="cloudB" cx="170" cy="71" rx="19" ry="8" fill="#e3e8ee" opacity="1.0"/>
+      <ellipse class="cloudA" cx="140" cy="70" rx="44" ry="13" fill="#e3e8ee" opacity="1.0"/>
+      <ellipse class="cloudB" cx="168" cy="60" rx="30" ry="11" fill="#e3e8ee" opacity="1.0"/>
+      <ellipse class="cloudA" cx="238" cy="88" rx="40" ry="12" fill="#e3e8ee" opacity="0.95"/>
+      <ellipse class="cloudB" cx="210" cy="80" rx="26" ry="10" fill="#e3e8ee" opacity="0.95"/>
+      <ellipse class="cloudA" cx="160" cy="108" rx="36" ry="11" fill="#e3e8ee" opacity="0.85"/>
+      <ellipse class="cloudB" cx="272" cy="116" rx="34" ry="11" fill="#e3e8ee" opacity="0.85"/>
+      <ellipse class="cloudA" cx="120" cy="96" rx="26" ry="9" fill="#e3e8ee" opacity="0.8"/>
       <g fill="#a3aeba" filter="url(#blurFar)">
         <rect x="100" y="140" width="16" height="36"/><rect x="118" y="132" width="14" height="44"/>
         <rect x="134" y="146" width="20" height="30"/><rect x="156" y="126" width="16" height="50"/>
@@ -171,8 +173,8 @@
     <circle cx="20" cy="8" r="2.6" fill="none" stroke="#5c5744" stroke-width="1.6"/>
     <circle cx="56" cy="8" r="2.6" fill="none" stroke="#5c5744" stroke-width="1.6"/>
     <text x="38" y="22" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="11" fill="#f3ead4">aug</text>
-    <text x="38" y="63" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="30" font-weight="bold" fill="#5a4c36">2</text>
-    <text x="38" y="80" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="10" fill="#a3946e">sun</text>
+    <text x="38" y="63" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="30" font-weight="bold" fill="#5a4c36">3</text>
+    <text x="38" y="80" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="10" fill="#a3946e">mon</text>
   </g>
 
   <!-- shelf -->
@@ -253,7 +255,7 @@
     <path d="M0 98 h108 v10 q0 4 -4 4 h-100 q-4 0 -4 -4 z" fill="#b9ac8c"/>
     <rect x="12" y="10" width="84" height="62" rx="4" fill="#9c8f70"/>
     <rect x="16" y="14" width="76" height="54" rx="2" fill="#241f19"/>
-    <path d="M22 18 v44 h66" stroke="#c98d3d" fill="none" opacity="0.4" stroke-width="1"/><path d="M24 26 L32 23 L37 27 L45 32 L50 32 L57 34 L63 37 L68 39 L74 41 L79 40" stroke="#c98d3d" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M22 18 v44 h66" stroke="#c98d3d" fill="none" opacity="0.4" stroke-width="1"/><circle cx="26" cy="50" r="1.4" fill="#c98d3d"/><circle cx="29" cy="54" r="1.4" fill="#c98d3d"/><circle cx="32" cy="59" r="1.4" fill="#c98d3d"/><circle cx="48" cy="41" r="1.4" fill="#c98d3d"/><circle cx="52" cy="47" r="1.4" fill="#c98d3d"/><circle cx="56" cy="33" r="1.4" fill="#c98d3d"/><circle cx="62" cy="34" r="1.4" fill="#c98d3d"/><circle cx="64" cy="39" r="1.4" fill="#c98d3d"/><circle cx="79" cy="28" r="1.4" fill="#c98d3d"/><circle cx="84" cy="27" r="1.4" fill="#c98d3d"/><circle cx="86" cy="29" r="1.4" fill="#c98d3d"/><circle cx="87" cy="25" r="1.4" fill="#c98d3d"/><path d="M26 58 L86 24" stroke="#c98d3d" stroke-width="1" opacity="0.6" stroke-dasharray="4 3"/>
     <rect class="cursor" x="80" y="56" width="5" height="7" fill="#c98d3d"/>
     <rect x="62" y="80" width="30" height="4" rx="1.5" fill="#9c8f70"/>
     <rect x="14" y="82" width="10" height="6" rx="1" fill="#b9ac8c"/>
