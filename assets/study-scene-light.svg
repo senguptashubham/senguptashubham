@@ -99,10 +99,13 @@
   <g>
     <rect x="97" y="41" width="206" height="178" fill="url(#skygrad)"/>
     <g clip-path="url(#panes)">
-      <ellipse class="cloudA" cx="148" cy="76" rx="34" ry="11" fill="#e3e8ee" opacity="1.0"/>
-      <ellipse class="cloudB" cx="170" cy="68" rx="22" ry="9" fill="#e3e8ee" opacity="1.0"/>
-      <ellipse class="cloudA" cx="238" cy="106" rx="30" ry="9" fill="#e3e8ee" opacity="0.8"/>
-      <ellipse class="cloudB" cx="216" cy="99" rx="18" ry="7" fill="#e3e8ee" opacity="0.8"/>
+      <ellipse class="cloudA" cx="140" cy="70" rx="44" ry="13" fill="#e3e8ee" opacity="1.0"/>
+      <ellipse class="cloudB" cx="168" cy="60" rx="30" ry="11" fill="#e3e8ee" opacity="1.0"/>
+      <ellipse class="cloudA" cx="238" cy="88" rx="40" ry="12" fill="#e3e8ee" opacity="0.95"/>
+      <ellipse class="cloudB" cx="210" cy="80" rx="26" ry="10" fill="#e3e8ee" opacity="0.95"/>
+      <ellipse class="cloudA" cx="160" cy="108" rx="36" ry="11" fill="#e3e8ee" opacity="0.85"/>
+      <ellipse class="cloudB" cx="272" cy="116" rx="34" ry="11" fill="#e3e8ee" opacity="0.85"/>
+      <ellipse class="cloudA" cx="120" cy="96" rx="26" ry="9" fill="#e3e8ee" opacity="0.8"/>
       <g fill="#a3aeba" filter="url(#blurFar)">
         <rect x="100" y="140" width="16" height="36"/><rect x="118" y="132" width="14" height="44"/>
         <rect x="134" y="146" width="20" height="30"/><rect x="156" y="126" width="16" height="50"/>
@@ -135,21 +138,12 @@
       </g>
       <rect x="209" y="150" width="4" height="24" fill="#c07aae" opacity="0.25" filter="url(#blurGlow)"/>
       <rect class="lit" x="209" y="150" width="4" height="24" fill="#c07aae"/>
-      <g class="rain">
-        <g class="rainA" stroke-width="1.3" stroke-linecap="round">
-          <line x1="112" y1="52" x2="109" y2="66"/><line x1="148" y1="34" x2="145" y2="48"/>
-          <line x1="184" y1="58" x2="181" y2="72"/><line x1="220" y1="40" x2="217" y2="54"/>
-          <line x1="256" y1="52" x2="253" y2="66"/><line x1="290" y1="44" x2="287" y2="58"/>
-        </g>
-        <g class="rainB" stroke-width="1.1" stroke-linecap="round" opacity="0.7">
-          <line x1="128" y1="46" x2="125" y2="58"/><line x1="164" y1="30" x2="161" y2="42"/>
-          <line x1="200" y1="52" x2="197" y2="64"/><line x1="238" y1="34" x2="235" y2="46"/>
-          <line x1="272" y1="48" x2="269" y2="60"/>
-        </g>
-        <g class="rainC" stroke-width="1.5" stroke-linecap="round">
-          <line x1="120" y1="38" x2="117" y2="54"/><line x1="172" y1="46" x2="169" y2="62"/>
-          <line x1="212" y1="30" x2="209" y2="46"/><line x1="248" y1="42" x2="245" y2="58"/>
-          <line x1="282" y1="34" x2="279" y2="50"/>
+      <g>
+        <path class="wind windA" d="M104 66 q18 -6 36 0 q16 5 30 -1"/>
+        <path class="wind windB" d="M120 96 q16 -5 32 0 q14 4 26 -1"/>
+        <g class="leafG">
+          <path d="M0 0 q4 -5 8 0 q-4 5 -8 0 z" fill="#567244"/>
+          <path d="M8 0 l3 -1.5" stroke="#425936" stroke-width="1" stroke-linecap="round"/>
         </g>
       </g>
     </g>
@@ -179,8 +173,8 @@
     <circle cx="20" cy="8" r="2.6" fill="none" stroke="#5c5744" stroke-width="1.6"/>
     <circle cx="56" cy="8" r="2.6" fill="none" stroke="#5c5744" stroke-width="1.6"/>
     <text x="38" y="22" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="11" fill="#f3ead4">aug</text>
-    <text x="38" y="63" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="30" font-weight="bold" fill="#5a4c36">13</text>
-    <text x="38" y="80" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="10" fill="#a3946e">thu</text>
+    <text x="38" y="63" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="30" font-weight="bold" fill="#5a4c36">14</text>
+    <text x="38" y="80" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="10" fill="#a3946e">fri</text>
   </g>
 
   <!-- shelf -->
@@ -261,7 +255,7 @@
     <path d="M0 98 h108 v10 q0 4 -4 4 h-100 q-4 0 -4 -4 z" fill="#b9ac8c"/>
     <rect x="12" y="10" width="84" height="62" rx="4" fill="#9c8f70"/>
     <rect x="16" y="14" width="76" height="54" rx="2" fill="#241f19"/>
-    <path d="M22 18 v44 h66" stroke="#c98d3d" fill="none" opacity="0.4" stroke-width="1"/><path d="M24 24.5 L28 27.4 L32 32.5 L36 39.0 L40 45.6 L44 51.2 L48 54.9 L52 56.0 L56 54.3 L60 50.1 L64 44.1 L68 37.4 L72 31.2 L76 26.5 L80 24.2 L84 24.6 L88 27.7" stroke="#c98d3d" fill="none" stroke-width="1.4" stroke-linecap="round"/><path d="M24 22.5 L32 34.2 L40 48.9 L48 56.2 L56 53.9 L64 46.1 L72 30.3 L80 24.4 L88 24.3" stroke="#c98d3d" fill="none" stroke-width="1" opacity="0.55" stroke-dasharray="2 3" stroke-linecap="round"/>
+    <path d="M22 18 v44 h66" stroke="#c98d3d" fill="none" opacity="0.4" stroke-width="1"/><path d="M24 23 L31 27 L38 28 L44 29 L52 31 L58 29 L66 31 L74 29 L82 35 L89 41" stroke="#c98d3d" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
     <rect class="cursor" x="80" y="56" width="5" height="7" fill="#c98d3d"/>
     <rect x="62" y="80" width="30" height="4" rx="1.5" fill="#9c8f70"/>
     <rect x="14" y="82" width="10" height="6" rx="1" fill="#b9ac8c"/>
