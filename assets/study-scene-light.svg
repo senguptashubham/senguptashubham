@@ -173,8 +173,8 @@
     <circle cx="20" cy="8" r="2.6" fill="none" stroke="#5c5744" stroke-width="1.6"/>
     <circle cx="56" cy="8" r="2.6" fill="none" stroke="#5c5744" stroke-width="1.6"/>
     <text x="38" y="22" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="11" fill="#f3ead4">aug</text>
-    <text x="38" y="63" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="30" font-weight="bold" fill="#5a4c36">20</text>
-    <text x="38" y="80" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="10" fill="#a3946e">thu</text>
+    <text x="38" y="63" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="30" font-weight="bold" fill="#5a4c36">21</text>
+    <text x="38" y="80" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="10" fill="#a3946e">fri</text>
   </g>
 
   <!-- shelf -->
@@ -255,7 +255,7 @@
     <path d="M0 98 h108 v10 q0 4 -4 4 h-100 q-4 0 -4 -4 z" fill="#b9ac8c"/>
     <rect x="12" y="10" width="84" height="62" rx="4" fill="#9c8f70"/>
     <rect x="16" y="14" width="76" height="54" rx="2" fill="#241f19"/>
-    <path d="M22 18 v44 h66" stroke="#c98d3d" fill="none" opacity="0.4" stroke-width="1"/><rect x="26" y="52" width="6" height="8" fill="#c98d3d" opacity="0.85"/><rect x="35" y="43" width="6" height="17" fill="#c98d3d" opacity="0.85"/><rect x="44" y="30" width="6" height="30" fill="#c98d3d" opacity="0.85"/><rect x="53" y="30" width="6" height="30" fill="#c98d3d" opacity="0.85"/><rect x="62" y="28" width="6" height="32" fill="#c98d3d" opacity="0.85"/><rect x="71" y="38" width="6" height="22" fill="#c98d3d" opacity="0.85"/><rect x="80" y="49" width="6" height="11" fill="#c98d3d" opacity="0.85"/>
+    <path d="M22 18 v44 h66" stroke="#c98d3d" fill="none" opacity="0.4" stroke-width="1"/><circle cx="27" cy="61" r="1.4" fill="#c98d3d"/><circle cx="39" cy="56" r="1.4" fill="#c98d3d"/><circle cx="40" cy="49" r="1.4" fill="#c98d3d"/><circle cx="43" cy="44" r="1.4" fill="#c98d3d"/><circle cx="47" cy="44" r="1.4" fill="#c98d3d"/><circle cx="55" cy="38" r="1.4" fill="#c98d3d"/><circle cx="62" cy="39" r="1.4" fill="#c98d3d"/><circle cx="66" cy="28" r="1.4" fill="#c98d3d"/><circle cx="68" cy="40" r="1.4" fill="#c98d3d"/><circle cx="75" cy="31" r="1.4" fill="#c98d3d"/><circle cx="77" cy="29" r="1.4" fill="#c98d3d"/><circle cx="82" cy="20" r="1.4" fill="#c98d3d"/><path d="M26 58 L86 24" stroke="#c98d3d" stroke-width="1" opacity="0.6" stroke-dasharray="4 3"/>
     <rect class="cursor" x="80" y="56" width="5" height="7" fill="#c98d3d"/>
     <rect x="62" y="80" width="30" height="4" rx="1.5" fill="#9c8f70"/>
     <rect x="14" y="82" width="10" height="6" rx="1" fill="#b9ac8c"/>
