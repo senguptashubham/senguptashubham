@@ -101,14 +101,14 @@
         <circle cx="272" cy="72" r="10" fill="#e8ddc2" opacity="0.9"/>
         <circle cx="268" cy="69" r="2.4" fill="#241f36" opacity="0.4"/>
         <circle cx="276" cy="76" r="1.6" fill="#241f36" opacity="0.4"/>
-        <circle cx="290.1" cy="72" r="10.6" fill="#0f1420"/>
+        <circle cx="288.7" cy="72" r="10.6" fill="#0f1420"/>
       </g>
-      <circle cx="152" cy="57" r="0.8" fill="#e8ddc2" opacity="0.55"/>
-      <circle cx="138" cy="81" r="0.8" fill="#e8ddc2" opacity="0.4"/>
-      <circle cx="298" cy="81" r="1.3" fill="#e8ddc2" opacity="0.55"/>
-      <circle cx="173" cy="56" r="0.8" fill="#e8ddc2" opacity="0.4"/>
-      <circle cx="298" cy="64" r="0.8" fill="#e8ddc2" opacity="0.55"/>
-      <circle cx="158" cy="97" r="0.8" fill="#e8ddc2" opacity="0.4"/>
+      <circle cx="172" cy="85" r="1.3" fill="#e8ddc2" opacity="0.55"/>
+      <circle cx="107" cy="82" r="0.8" fill="#e8ddc2" opacity="0.7"/>
+      <circle cx="192" cy="47" r="1.3" fill="#e8ddc2" opacity="0.7"/>
+      <circle cx="216" cy="88" r="1.0" fill="#e8ddc2" opacity="0.55"/>
+      <circle cx="218" cy="100" r="1.0" fill="#e8ddc2" opacity="0.7"/>
+      <circle cx="152" cy="76" r="1.3" fill="#e8ddc2" opacity="0.7"/>
       <ellipse class="cloudA" cx="150" cy="78" rx="30" ry="10" fill="#2a3450" opacity="1.0"/>
       <ellipse class="cloudB" cx="170" cy="71" rx="19" ry="8" fill="#2a3450" opacity="1.0"/>
       <g fill="#252e47" filter="url(#blurFar)">
@@ -177,9 +177,9 @@
     <path d="M0 28 h76 v-17 q0 -3 -3 -3 h-70 q-3 0 -3 3 z" fill="#a75c3c"/>
     <circle cx="20" cy="8" r="2.6" fill="none" stroke="#514c3c" stroke-width="1.6"/>
     <circle cx="56" cy="8" r="2.6" fill="none" stroke="#514c3c" stroke-width="1.6"/>
-    <text x="38" y="22" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="11" fill="#ddd1b4">aug</text>
-    <text x="38" y="63" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="30" font-weight="bold" fill="#6b5d45">31</text>
-    <text x="38" y="80" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="10" fill="#a99a78">mon</text>
+    <text x="38" y="22" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="11" fill="#ddd1b4">sep</text>
+    <text x="38" y="63" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="30" font-weight="bold" fill="#6b5d45">1</text>
+    <text x="38" y="80" text-anchor="middle" font-family="ui-monospace,'Courier New',monospace" font-size="10" fill="#a99a78">tue</text>
   </g>
 
   <!-- shelf -->
@@ -260,7 +260,7 @@
     <path d="M0 98 h108 v10 q0 4 -4 4 h-100 q-4 0 -4 -4 z" fill="#b8ab8d"/>
     <rect x="12" y="10" width="84" height="62" rx="4" fill="#9c8f72"/>
     <rect x="16" y="14" width="76" height="54" rx="2" fill="#171310"/>
-    <path d="M22 18 v44 h66" stroke="#e0a458" fill="none" opacity="0.4" stroke-width="1"/><circle cx="32" cy="47" r="1.4" fill="#e0a458"/><circle cx="35" cy="48" r="1.4" fill="#e0a458"/><circle cx="46" cy="42" r="1.4" fill="#e0a458"/><circle cx="53" cy="36" r="1.4" fill="#e0a458"/><circle cx="55" cy="36" r="1.4" fill="#e0a458"/><circle cx="57" cy="40" r="1.4" fill="#e0a458"/><circle cx="59" cy="32" r="1.4" fill="#e0a458"/><circle cx="63" cy="39" r="1.4" fill="#e0a458"/><circle cx="67" cy="36" r="1.4" fill="#e0a458"/><circle cx="69" cy="33" r="1.4" fill="#e0a458"/><circle cx="75" cy="22" r="1.4" fill="#e0a458"/><circle cx="82" cy="21" r="1.4" fill="#e0a458"/><path d="M26 58 L86 24" stroke="#e0a458" stroke-width="1" opacity="0.6" stroke-dasharray="4 3"/>
+    <path d="M22 18 v44 h66" stroke="#e0a458" fill="none" opacity="0.4" stroke-width="1"/><path d="M24 22 L30 25 L36 26 L44 31 L51 33 L57 33 L64 32 L72 33 L79 37" stroke="#e0a458" fill="none" stroke-width="1.4" stroke-linecap="round"/><path d="M24 26 L32 27 L38 31 L46 35 L53 39 L59 37 L67 41 L75 40 L82 45" stroke="#e0a458" fill="none" stroke-width="1.2" stroke-dasharray="3 2" opacity="0.7" stroke-linecap="round"/>
     <rect class="cursor" x="80" y="56" width="5" height="7" fill="#e0a458"/>
     <rect x="62" y="80" width="30" height="4" rx="1.5" fill="#9c8f72"/>
     <rect x="14" y="82" width="10" height="6" rx="1" fill="#b8ab8d"/>
