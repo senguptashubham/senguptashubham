@@ -8,17 +8,16 @@
 
 **shubham sengupta**
 
-<sub>a curious student of computer science &nbsp;·&nbsp; at the moment, mostly wandering through ai/ml</sub>
+<sub>machine learning, built from the ground up &nbsp;·&nbsp; and then checked against the ground truth</sub>
 
 </div>
 
 <br>
 
-At heart I just like understanding systems all the way down — whatever the system happens to be. Lately the corner I've settled into is machine learning, though I don't stay inside the lines much.
+My career was built on professional skepticism: uncovering where enterprise software quietly lies, designing resilient automated workflows, and scaling modern solutions across Swiss Re, Qualcomm, PwC, and Cognizant.
+These days, I point that same suspicion at machine learning models and build them every day.
 
-The habit of taking things apart comes from six-plus years as the person whose job was finding where software quietly lied about working — SDET and technical business analyst work across Swiss Re, Qualcomm, PwC, and Cognizant. You get suspicious of black boxes in that line of work. I never shook it.
-
-So I re-derive instead of trusting. A neural net felt real to me only once I'd written the forward pass and backprop by hand in NumPy — no autograd doing work I hadn't done myself. Gradient descent felt real only once I'd trained the same network full-batch, mini-batch, and stochastic, and watched — not assumed — which one actually converged faster, and why.
+Two habits carry over. I rebuild things until I understand them: a network only felt real to me once I'd written its backprop by hand. And I measure what a system does against ground truth, not against what it says about itself. Most of what I find worth writing down comes from the gap between those two.
 
 <div align="center">
 <picture>
@@ -28,9 +27,29 @@ So I re-derive instead of trusting. A neural net felt real to me only once I'd w
 </picture>
 </div>
 
-I read philosophy for fun, and the questions that actually keep me up sit at the join between the two: whether a system trained to predict the next token can ever be more than that, whether world models are the real path forward instead, whether anything resembling consciousness could emerge from probability distributions — or whether that question is malformed from the start. I don't have answers. I just keep pulling on the thread.
+### on the desk, finished
 
-No grand claims here — I'm working through the fundamentals one method at a time, rebuilt, verified, written down, and letting that compound.
+**[judge-calibration](https://github.com/senguptashubham/judge-calibration)** &nbsp;<sub>· [interactive site ↗](https://senguptashubham.github.io/judge-calibration/)</sub><br>
+Do LLM judges know when they're wrong? I tested three open-weight judges on 1,904 MT-Bench comparisons graded against human votes, on clean inputs and under position-swap and padding attacks. Qwen2.5-7B says it is 95% sure but is right 76% of the time. A pipeline that auto-accepts its verdicts at ≥ 0.90 confidence lets 98% of the wrong ones through. Cheap signals like order-swap agreement catch far more errors. A learned meta-model over those signals, Bayesian ones included, never significantly beat the best single signal.
+
+**[crater-detection-yolo-vs-owlv2](https://github.com/senguptashubham/crater-detection-yolo-vs-owlv2)**<br>
+A fine-tuned specialist (YOLOv8) against a zero/one-shot generalist (OWLv2) on lunar and Mars craters, all on a 6 GB laptop GPU. The specialist wins in-distribution by ~660× AP and runs ~350× faster. On a held-out set it had never seen, it loses 84% of its AP.
+
+**[shubhamLearnsMachine](https://github.com/senguptashubham/shubhamLearnsMachine)**<br>
+The foundations, rebuilt one at a time. It has an MLP in raw NumPy, a Conv2D layer via im2col checked against `nn.Conv2d`, and hand-rolled RNNs and LSTMs up to a character-level Shakespeare model. It also takes a CIFAR-10 CNN from 73.9% to 82.4% through training method alone.
+
+### on the desk, next
+
+Where my attention goes, roughly in the order it gets built:
+
+- **retrieval and memory.** How a system decides what to fetch, what to keep, and what to let go of. This covers RAG done carefully and memory that forgets by disuse rather than by overwriting.
+- **agents you can audit.** Tool-using systems whose failures you can find before your users do.
+- **evaluation past accuracy.** Calibration, robustness, and what it actually costs to trust a model's output.
+- **past next-token prediction.** Small models, world models and JEPA-style objectives, and diffusion language models.
+
+Whatever has become real is in the pinned repos below. Ideas stay off this page until they have results.
+
+I read philosophy for fun. The question I keep pulling on sits where the two meet: can a system trained to predict the next token ever be more than that, or is the question malformed from the start? No answers yet.
 
 <div align="center">
 <picture>
@@ -40,17 +59,15 @@ No grand claims here — I'm working through the fundamentals one method at a ti
 </picture>
 </div>
 
-<div align="center">
-<sub>what's on the desk right now lives in <a href="https://github.com/senguptashubham/shubhamLearnsMachine"><b>shubhamLearnsMachine</b></a></sub>
-</div>
+### working together
 
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/divider-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/divider-light.svg">
-  <img src="./assets/divider-dark.svg" alt="" width="240"/>
-</picture>
-</div>
+Open to collaboration and professional work, especially where these help:
+
+- **evaluating an LLM or RAG pipeline before it ships.** That means test sets, LLM-as-judge setups that are checked for calibration and bias, and regression checks that catch silent failures.
+- **fine-tuning and benchmarking models on real constraints.** Your data, your hardware budget, and an honest comparison against the off-the-shelf option.
+- **test-automation discipline brought to ML code.** Pytest suites, pinned environments, and runs that reproduce.
+
+<br>
 
 ### the shelf
 
@@ -58,7 +75,7 @@ No grand claims here — I'm working through the fundamentals one method at a ti
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/bookshelf-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/bookshelf-light.svg">
-  <img src="./assets/bookshelf-dark.svg" alt="two shelves of books: current ML tools on top — python, numpy, pytorch, tensorflow, keras, scikit-learn, matplotlib, jupyter — and the testing tools that came before on the bottom — selenium, java, c#, playwright, cucumber, postman, jenkins, oracle" width="100%"/>
+  <img src="./assets/bookshelf-dark.svg" alt="two shelves of books: the tools in daily use on top — python, numpy, pytorch, transformers, vllm, ultralytics, scikit-learn, numpyro, pandas, matplotlib, jupyter — and the testing tools that came before on the bottom — selenium, java, c#, playwright, cucumber, postman, jenkins, oracle" width="100%"/>
 </picture>
 </div>
 
@@ -66,6 +83,6 @@ No grand claims here — I'm working through the fundamentals one method at a ti
 
 <div align="center">
 
-<sub>[linkedin ↗](https://www.linkedin.com/in/senguptashubham)</sub>
+<sub>[linkedin ↗](https://www.linkedin.com/in/senguptashubham) &nbsp;·&nbsp; [judge-calibration on hugging face ↗](https://huggingface.co/spaces/shubhamsengupta/judge-calibration)</sub>
 
 </div>
