@@ -42,6 +42,7 @@ The foundations, rebuilt one at a time. It has an MLP in raw NumPy, a Conv2D lay
 
 Where my attention goes, roughly in the order it gets built:
 
+- **safety and attacks.** Adversarial inputs, AI control, and what interpretability can tell an evaluator. I'm working through ARENA and BlueDot's Technical AI Safety course now.
 - **retrieval and memory.** How a system decides what to fetch, what to keep, and what to let go of. This covers RAG done carefully and memory that forgets by disuse rather than by overwriting.
 - **agents you can audit.** Tool-using systems whose failures you can find before your users do.
 - **evaluation past accuracy.** Calibration, robustness, and what it actually costs to trust a model's output.
@@ -61,7 +62,7 @@ I read philosophy for fun. The question I keep pulling on sits where the two mee
 
 ### working together
 
-Open to collaboration and professional work, especially where these help:
+Open to professional work, and research collaborations on evaluation, robustness and safety. Where I can help most:
 
 - **evaluating an LLM or RAG pipeline before it ships.** That means test sets, LLM-as-judge setups that are checked for calibration and bias, and regression checks that catch silent failures.
 - **fine-tuning and benchmarking models on real constraints.** Your data, your hardware budget, and an honest comparison against the off-the-shelf option.
@@ -83,6 +84,6 @@ Open to collaboration and professional work, especially where these help:
 
 <div align="center">
 
-<sub>[linkedin ↗](https://www.linkedin.com/in/senguptashubham) &nbsp;·&nbsp; [judge-calibration on hugging face ↗](https://huggingface.co/spaces/shubhamsengupta/judge-calibration)</sub>
+<sub>[linkedin ↗](https://www.linkedin.com/in/senguptashubham) &nbsp;·&nbsp; [substack ↗](https://substack.com/@shubhamyaps) &nbsp;·&nbsp; [judge-calibration on hugging face ↗](https://huggingface.co/spaces/shubhamsengupta/judge-calibration)</sub>
 
 </div>
